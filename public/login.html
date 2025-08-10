@@ -91,12 +91,6 @@
         } else if (password.length < 6) {
           valid = false;
           message = 'Password must be at least 6 characters.';
-        }
-        if (!valid) {
-          document.getElementById('login-message').textContent = message;
-          return;
-        }
-        document.getElementById('login-message').textContent = 'Logging in...';
         try {
           const response = await fetch('https://winnersclearing.vercel.app/api/login', {
             method: 'POST',
@@ -107,6 +101,11 @@
           if (response.ok) {
             window.location.href = "success.html";
           } else {
+            document.getElementById('login-message').textContent = data.error || 'Login failed.';
+          }
+        } catch (err) {
+          document.getElementById('login-message').textContent = 'Network error.';
+        }
             document.getElementById('login-message').textContent = data.error || 'Login failed.';
           }
         } catch (err) {
